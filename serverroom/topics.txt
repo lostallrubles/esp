@@ -1,0 +1,8 @@
+/ESP..node.chipid()../CMD/SETTINGS         => update setting with json data
+
+/ESP..node.chipid()../CMD/FILE             =>  dofile('publish_file.lua')(data)
+ 
+/ESP..node.chipid()../CMD/GPIO/            => process_gpio.lua
+
+/ESP..node.chipid()../CMD/WFILE/           =>
+
