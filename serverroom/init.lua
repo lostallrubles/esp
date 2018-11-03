@@ -15,7 +15,6 @@ lastTicks = 0
 gpio.mode(pinRelay,  gpio.OUTPUT)
 gpio.write(pinRelay, gpio.LOW)
 
---interrupt gpio0 (pin3) for manual switch
 gpio.mode(pinSwitch, gpio.INT)
 
 local function switch(lvl, mseconds)
