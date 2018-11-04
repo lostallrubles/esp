@@ -4,5 +4,5 @@
  
 /ESP..node.chipid()../CMD/GPIO/            => process_gpio.lua
 
-/ESP..node.chipid()../CMD/WFILE/           =>
+/ESP..node.chipid()../CMD/WFILE/           => dofile('process_fwrite.lua')(mcli,topic,data)
 

@@ -1,0 +1,7 @@
+.state_on{
+    background-image: url(images/lightbulb-on.png);
+}
+
+.state_off{
+    background-image: url(images/lightbulb-off.png);
+}
