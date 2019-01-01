@@ -1,7 +1,7 @@
 return function(aWifiName, aSettingsName)
 
  local function write_object(aFileName, aObject)
-  local ok, json = pcall(cjson.encode, aObject)
+  local ok, json = pcall(sjson.encode, aObject)
   if ok then 
    print("json encoded for " .. aFileName)
    if file.open(aFileName, "w+") then
@@ -16,7 +16,7 @@ return function(aWifiName, aSettingsName)
 
  local function write_default_wifi(aFileName)
   if not(file.exists(aFileName)) then 
-   local json = {ssid="don-pedro-gomez", pwd="123456789", auto=true}
+   local json = {ssid="netnet", pwd="gol19den66gate", auto=true}
    write_object(aFileName, json)
   end
  end 

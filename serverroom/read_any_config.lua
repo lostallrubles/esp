@@ -1,6 +1,6 @@
 return function (aSettName)
  if file.open(aSettName) then 
-  local ok, json = pcall(cjson.decode,file.read())
+  local ok, json = pcall(sjson.decode,file.read())
   if ok then 
    return json
   else

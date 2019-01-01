@@ -2,7 +2,7 @@ return function (mclient)
 
  local function get_state()
   h = node.heap()
-  local ok, json = pcall(cjson.encode, {heap=h, uptime=tmr.time(), relayPinNum=pinRelay, State=gpio.read(pinRelay)})
+  local ok, json = pcall(sjson.encode, {heap=h, uptime=tmr.time(), relayPinNum=pinRelay, State=gpio.read(pinRelay)})
   if ok then return json else return '{}' end
  end
 
